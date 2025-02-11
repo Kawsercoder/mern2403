@@ -130,3 +130,535 @@ nav .button-part a:hover{
     padding: 14px 28px;
     border-radius: 10px;
 }
+
+.bestservice .container .flex{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.bestservice .container .service-text h2{
+    font-size: 30px;
+    text-align: center;
+    
+
+}      
+.bestservice .container .service-image img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+
+
+}
+.bestservice .container .service-image h3 {
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+
+}
+
+
+
+.bestservice .container .service-image a{
+    margin-top: 20px;
+}
+
+.app-image{
+    background-image: url("/images/launchbanner1.png");
+    width: 400px;
+    height: 400px;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin-left: 70px;
+    position: relative;
+    
+    
+    
+}
+
+
+.app-imagetwo{
+    background-image: url("/images/launchbannertwo.jpg");
+    width: 200px;
+    height: 450px;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: absolute;
+    left: 350px;
+    z-index: 10;
+
+}
+
+
+
+.right-left{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+.display{
+    display: flex;
+    
+}
+
+
+.service-image img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: 92px;
+}
+
+.app-imagetwo .app-text{
+     text-align: flex-end;
+
+}
+
+.card2 .display{
+    text-align: left;
+}
+
+
+.resources-text h2{
+    font-size: 50px;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.resources-text p{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+
+.userinterface{
+    display: flex;
+    
+}
+
+.card4-image{
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 40px;
+    
+}
+.card4-image img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.card4-image h3{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card4-image p{
+    text-align: left;
+}
+
+
+.container{
+
+    display: flex;
+}
+
+
+.imageone img{
+
+    width: 400px;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    
+}
+    
+.imagetwo img{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    
+    
+}
+
+.textfile{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.showcasetext{
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.showcasetext h2{
+    font-size: 30px;
+    
+}
+
+.shocasetext h5{
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.card-image{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 160px;
+}
+
+.cardimageone img{
+    width: 80%;
+    height: auto;
+
+}
+
+.cardimagetwo img{
+    width: 80%;
+    height: auto;
+}
+
+.cardimagethree img{
+    width: 80%;
+    height: auto;
+}
+
+
+
+.containertop{
+    width: 1200px;
+    margin:0 auto;
+}
+
+
+.topglobaltext h3{
+    font-size: 30px;
+    
+}
+
+.displayflex{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 50px;
+}
+
+
+.buttonview a{
+    padding: 14px 28px;
+    border-radius: 10px;
+    background-color: purple;
+    text-decoration: none;
+    color: white;
+}
+
+
+.marquee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+}
+
+.freetrial{
+
+}
+
+.containerfreetrial{
+
+}
+
+.rowtrial{
+
+}
+
+.rowtexttrial{
+
+
+}
+
+
+.rowtexttrial h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rowtexttrial p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.rowcardone{
+    background-color: rgb(42, 91, 165);
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 50px;
+    transition: .4s;
+}
+
+.rowcardone:hover{
+    background-color: rgb(165, 122, 42);
+}
+
+
+
+.rowcardonetext{
+    text-align: center;
+    color: rgb(12, 1, 13);
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(76, 8, 82);
+    margin: auto;
+}
+
+.rowcardonetext span{
+    
+    width: 10px;
+    height: auto;
+    
+
+}
+
+.rowcardoneprice{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+}
+
+
+.rowcardonetext{
+
+    font-size: 15px;
+
+}
+
+.rowcardoneprice h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.rowcardoneprice a{
+    padding: 14px 28px;
+    border-radius: 10px;
+    background-color: purple;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.rowcardoneul{
+    line-height: 30px;
+}
+
+.rowcardoneul li i{
+    
+    margin-right: 10px;
+}
+
+
+.flexcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.news img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+
+
+.flex123, .flex234{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.imagesocial img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.boomingpara p{
+    text-align: start;
+    margin-top: 40px;
+}
+
+
+.containerbooming{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.containerbooming h2{
+    font-size: 30px;
+
+}
+
+
+.view{
+    padding: 14px 28px;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    background-color: purple;
+    text-decoration: none;
+    color: white;
+    margin-top: 60px;
+}
+
+.booming{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.followus{
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.innovate{
+    
+    display: flex;
+    justify-self: space-evenly;
+    align-items: center;
+    margin-top: 1px solid grey;
+}
+
+.innovate img{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+
+}
+
+.innovate h4{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.gridsection{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+.imagegridcol1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.imagegridcol2 img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.project{
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgb(76, 8, 82);
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+
+.project-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.project-text h2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.project-text a{
+    padding: 14px 28px;
+    border-radius: 10px;
+    background-color: rgb(241, 235, 241);
+    text-decoration: none;
+    color: rgb(18, 7, 7);
+    margin-top: 50px;
+}
+
+
+.sectiongrid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 1000px;
+        margin: auto;
+
+}
+
+
+.privacy-text{
+    display: flex;
+    margin-right: 20px;
+}
+
+.privacy-text p{
+    margin-right: 40px;
+}
+
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.features ul li{
+    margin-top: 20px;
+}
+
+.features h3{
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.sectiongrid .logo789{
+    margin-top: 35px;
+}
