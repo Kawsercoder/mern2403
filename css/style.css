@@ -1,0 +1,1080 @@
+/*=============================
+ Common css start
+ ==============================*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #29313d;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1410px;
+  margin: 0 auto;
+}
+.box {
+  display: flex;
+}
+
+.common-title h2 {
+  font-size: 48px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #29313d;
+  text-align: center;
+}
+
+.card {
+  background: #fdfdfd;
+  width: 330px;
+  height: 290px;
+  padding: 30px 20px;
+  transition: 0.4s;
+}
+
+.card p {
+  width: 290px;
+  height: 72px;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400px;
+  padding-bottom: 24px;
+  line-height: 32px;
+  color: #29313d;
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 28px;
+  padding-top: 24px;
+  padding-bottom: 14px;
+  line-height: 39.2px;
+  color: #29313d;
+}
+.card a {
+  font-family: "Nunito", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #29313d;
+  line-height: 22.4px;
+}
+
+.button-part a {
+  padding: 14px 28px;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  background: #8454f5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  font-family: "Nunito", serif;
+  transition: 0.5s;
+}
+
+.button-part a:hover {
+  background: transparent;
+  color: #29313d;
+  border: 1px solid #8454f5;
+}
+
+/*=============================
+ Common css end
+ ==============================*/
+
+/*=============================
+ Nav part start
+ ==============================*/
+
+nav {
+  position: relative;
+  padding: 30px 0px;
+  z-index: 1;
+  background: #f8fdfe;
+}
+
+nav .box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-part {
+  width: 24%;
+}
+
+.menu-part {
+  display: flex;
+
+  width: 65%;
+}
+.button-part {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .menu-part ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 48px;
+  list-style: none;
+}
+
+nav .menu-part ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #29313d;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", serif;
+}
+
+nav .menu-part ul li a:hover {
+  color: #6a55ea;
+}
+
+.sub-menu-part {
+  margin: 0 0;
+  padding: 10px 10px;
+  position: absolute;
+  flex-direction: column;
+  row-gap: 5px;
+
+  color: #29313d;
+  background: #6955eac7;
+  border: solid #0000008b;
+  border-radius: 20px;
+  top: 35px;
+  visibility: hidden;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.sub-menu-part:hover {
+  margin: 0 0;
+  padding: 10px 10px;
+  position: absolute;
+  flex-direction: column;
+  row-gap: 5px;
+
+  color: #29313d;
+  background: #e8e8ebc7;
+  border: solid burlywood;
+  border-radius: 20px;
+  top: 35px;
+  visibility: hidden;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+nav .menu-part ul li a:hover .sub-menu-part {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sub-menu-part li {
+  padding: 10px 20px;
+  border: solid black;
+  border-radius: 5px;
+}
+
+.sub-menu-part li:hover {
+  padding: 10px 20px;
+  border: solid burlywood;
+  border-radius: 5px;
+}
+
+nav .button-part a {
+  padding: 14px 28px;
+
+  background: #8454f5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  font-family: "Nunito", serif;
+  transition: 0.5s;
+}
+nav .button-part a:hover {
+  background: transparent;
+  color: #29313d;
+}
+
+nav .menu-part ul li a i {
+  padding: 4px;
+}
+
+/*=============================
+ Nav part end
+ ==============================*/
+
+/*=============================
+ Banner part start
+ ==============================*/
+.banner {
+  position: relative;
+  padding: 260px 0px;
+
+  z-index: 0;
+  background: #f8fdfe;
+}
+
+.banner .bannerMask {
+  top: -200px;
+  left: -88px;
+  position: absolute;
+  width: 100%;
+  background: #f8fdfe;
+}
+.banner .bannerMask img {
+  width: 100%;
+}
+
+.bannerLeft {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  overflow: hidden;
+  animation: bannerleft 0.8s forwards;
+  overflow-x: hidden;
+  scale: 0;
+}
+
+@keyframes bannerleft {
+  form {
+    left: 0px;
+    overflow: hidden;
+  }
+  to {
+    left: 0px;
+    scale: 1;
+  }
+}
+
+.bannerRight {
+  position: absolute;
+  scale: 0;
+  right: 0;
+  top: 20px;
+
+  animation: bannerright 0.8s forwards;
+}
+
+@keyframes bannerright {
+  form {
+    right: 0;
+  }
+  to {
+    right: 0;
+    scale: 1;
+  }
+}
+
+.banner .container {
+  position: absolute;
+  left: 35%;
+  top: 136px;
+  height: 390px;
+  width: 464px;
+}
+
+.bannerTop {
+  position: absolute;
+  top: 3%;
+  left: 33%;
+  scale: 0;
+  animation: bannertop 0.8s forwards;
+}
+@keyframes bannertop {
+  form {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+.bannerBottom {
+  position: absolute;
+  left: 56%;
+  bottom: 48%;
+  scale: 0;
+  transform: translateY(300%);
+  animation: bannertop 0.8s forwards;
+}
+@keyframes bannertop {
+  form {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.banner .container h1 {
+  font-size: 64px;
+  font-family: "Open Sans", serif;
+  font-weight: 900;
+  height: 174px;
+  width: 464px;
+  font-family: "Open Sans", serif;
+}
+
+.banner .container p {
+  height: 72px;
+  width: 443px;
+  font-family: "Nunito", serif;
+}
+
+.banner .button-part a {
+  position: absolute;
+  padding: 14px 28px;
+  border: solid black;
+  border-radius: 18px;
+  background: #8454f5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  font-family: "Nunito", serif;
+  transition: 0.5s;
+  left: 35%;
+  top: 430px;
+  z-index: 1;
+}
+.banner .button-part a:hover {
+  background: transparent;
+  color: #29313d;
+}
+
+/*=============================
+ Banner part end
+ ==============================*/
+
+/*=============================
+ Service part Start 
+ ==============================*/
+
+.service .common-title h2 {
+  font-size: 48px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #29313d;
+  text-align: center;
+}
+
+.service {
+  padding: 196px 0;
+}
+.service .box {
+  margin-top: 60px;
+  column-gap: 30px;
+}
+.service .card {
+  background: #fdfdfd;
+  width: 330px;
+  height: 290px;
+  padding: 30px 20px;
+  transition: 0.4s;
+}
+
+.service .card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.service .card h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 28px;
+  padding-top: 24px;
+  padding-bottom: 14px;
+  line-height: 39.2px;
+  color: #29313d;
+}
+.service .card p {
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400px;
+  padding-bottom: 24px;
+  line-height: 32px;
+  color: #29313d;
+}
+.service .card a {
+  font-family: "Nunito", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #29313d;
+  line-height: 22.4px;
+}
+
+.service .card:hover {
+  background: white;
+  -webkit-box-shadow: 0px 0px 33px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 33px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px -20px rgba(0, 0, 0, 0.75);
+}
+
+/*=============================
+ Service part End
+ ==============================*/
+
+/*=============================
+ launch part start
+ ==============================*/
+
+.launch .left {
+  width: 40%;
+  position: relative;
+}
+
+.launch .right {
+  width: 60%;
+  padding-left: 60px;
+}
+
+.launch .launchbannerone {
+  width: 540px;
+  height: 620px;
+  background-image: url("../image/lounchbanner1.jpg");
+  position: absolute;
+  background-size: cover;
+  border: thin;
+  border-radius: 50px;
+}
+
+.launch .launchbannertwo {
+  width: 304px;
+  height: 620px;
+  background-image: url("../image/launchbannertwo.jpg");
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-55%, -4%);
+}
+
+.launch .common-title h2 {
+  text-align: left;
+  width: 672px;
+  height: 134px;
+  padding-bottom: 20px;
+}
+
+.launchcard {
+  height: 72px;
+  width: 443px;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.launch .right .card {
+  background: white;
+}
+
+/*=============================
+ launch part end
+ ==============================*/
+
+/*=============================
+ browse part start
+ ==============================*/
+.browse {
+  margin: 150px 0;
+}
+
+.browse .right {
+  width: 40%;
+}
+
+.browse .left {
+  width: 60%;
+  position: relative;
+}
+
+.browse .browsebannerone {
+  width: 540px;
+  height: 620px;
+  background-image: url("../image/browsebannertbottom.jpg");
+  position: absolute;
+  background-size: cover;
+  border: thin;
+  border-radius: 50px;
+}
+
+.browse .browsebannertwo {
+  width: 304px;
+  height: 620px;
+  background-image: url("../image/browsebannertop.jpg");
+  background-size: cover;
+  position: absolute;
+  left: 75%;
+  border: solid rgb(220, 220, 220);
+  border-width: 1px;
+  border-radius: 10px;
+  transform: translate(-55%, -4%);
+}
+
+.browse .common-title h2 {
+  text-align: left;
+  width: 672px;
+  height: 134px;
+  padding-bottom: 20px;
+}
+
+.launchcard {
+  height: 72px;
+  width: 443px;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.launch .right .card {
+  background: white;
+}
+
+/*=============================
+ Browse part end
+ ==============================*/
+
+/*=============================
+ Showcase part start
+ ==============================*/
+.showcase {
+  background: #f8fdfe80;
+}
+
+.showcase .common-title h2 {
+  padding-top: 100px;
+}
+.showcase .card p {
+  padding-left: 651px;
+  height: 36px;
+  width: 379px;
+}
+
+.showcase .card {
+  height: 0;
+  width: 0;
+  background: #f8fdfe80;
+}
+
+.showcase .box {
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  column-gap: 30px;
+}
+
+.showcaseimg img {
+  width: 330px;
+  height: 715px;
+  border-radius: 20px;
+  border: solid rgb(220, 220, 220);
+  border-width: 1px;
+}
+
+.indicator {
+  padding-left: 800px;
+  padding-bottom: 100px;
+}
+
+/*=============================
+ Showcase part end
+ ==============================*/
+
+/*=============================
+ Trust part start
+ ==============================*/
+
+.trust {
+  margin-top: 120px;
+}
+.trust .box {
+  justify-content: space-between;
+}
+
+.trust .common-title h2 {
+  width: 529px;
+  height: 134px;
+  text-align: left;
+}
+
+.trust .button-part {
+  height: 60px;
+  padding-top: 10px;
+}
+.trust .trustbox {
+  display: flex;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #f3f7fd;
+}
+
+.trust .trustbottom .box {
+  padding-top: 60px;
+  padding-bottom: 140px;
+  align-items: center;
+}
+.trust .trustbox img {
+  height: 20px;
+  width: 22px;
+  padding-right: 5px;
+}
+.trust .trustbox {
+  font-family: "Nunito", serif;
+  color: #29313dcc;
+}
+
+/*=============================
+ Trust part end
+ ==============================*/
+
+/*=============================
+ Trail part start
+ ==============================*/
+
+.trail {
+  background: #f8fdfe;
+  height: 515px;
+  padding-top: 120px;
+}
+.common-title {
+  text-align: center;
+}
+.trail .common-title p {
+  padding: 30px;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 96px;
+  height: 28px;
+  left: 47%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6a55ea33;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 48px;
+  width: 48px;
+  left: -20px;
+  bottom: -10px;
+  background-color: #6a55ea;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #6a55ea33;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(90px);
+  transform: translateX(90px);
+  transform: translateX(90px);
+}
+.trail .box {
+  column-gap: 30px;
+  justify-content: center;
+}
+.trailbox {
+  margin-top: 50px;
+  background: #e6f7fb;
+  height: 640px;
+  width: 450px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  transition: 0.5s;
+}
+
+.trailbox:hover {
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75);
+}
+.trailtitle {
+  text-align: center;
+}
+.trailtitle h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  padding-top: 28px;
+
+  padding-bottom: 10px;
+  color: #29313d;
+}
+
+.trailline {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: rgb(231, 229, 229);
+}
+
+.trailpill {
+  position: absolute;
+  height: 5px;
+  width: 51px;
+  border-radius: 40%;
+  background: #6a55ea;
+  left: 44%;
+  transform: translateY(-33%);
+}
+
+.trailbox2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-right: 28px;
+  padding-bottom: 48px;
+}
+
+.trailbox2 .button-part {
+  height: 64px;
+  width: 144px;
+  border: solid rgb(147, 147, 147);
+  border-width: 2px;
+  border-radius: 18px;
+  background: #8454f5;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  font-family: "Nunito", serif;
+  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+
+.trailbox2 .button-part:hover {
+  background: transparent;
+  color: #29313d;
+}
+
+.trailbox2 h4 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  color: #29313d;
+  padding-left: 28px;
+}
+
+.trailtext h3 {
+  margin-bottom: 24px;
+  line-height: 36px;
+  font-size: 18px;
+  font-family: "Nunito", serif;
+  font-weight: 500;
+  color: #29313d;
+  padding-left: 30px;
+}
+
+/*=============================
+ Trail part end
+ ==============================*/
+
+/*=============================
+ Recent part Start
+ ==============================*/
+.recent {
+  padding-bottom: 120px;
+}
+.recent .box {
+  margin-top: 500px;
+}
+
+.subrecentimg img {
+  height: 330px;
+  width: 342px;
+}
+
+.subrecentbox {
+  display: flex;
+  height: 342px;
+  padding-bottom: 64px;
+}
+.subrecentbox2 {
+  display: flex;
+}
+.subrecenttext h1 {
+  font-size: 36px;
+  line-height: 57px;
+  font-weight: 600;
+  color: #29313d;
+  font-family: "Poppins", serif;
+  padding-bottom: 28px;
+  padding-top: 20px;
+}
+
+.recentleft .common-title h2 {
+  text-align: start;
+  padding-bottom: 64px;
+  padding-left: 30px;
+}
+
+.subrecentimg2 img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.recentleft {
+  height: 961px;
+  width: 912px;
+}
+
+.subrecenttext2 h3 {
+  font-family: "Poppins", serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.subrecenttext2 p {
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  padding-bottom: 32px;
+}
+
+.subrecenttext h4 {
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  padding-bottom: 30px;
+  width: 443px;
+}
+.recentright {
+  padding-left: 168px;
+}
+.recentrightbox1 {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  margin-bottom: 68px;
+}
+
+.recentrightbox1 h2 {
+  font-size: 28px;
+  margin-right: 36px;
+  font-family: "Open Sans", serif;
+}
+
+.recentrighticon {
+  width: 24px;
+  height: 24px;
+  padding: 20px;
+  background: #6a55ea1a;
+  border-radius: 50px;
+  text-align: center;
+
+  transition: 0.4s;
+}
+
+.recentrighticon:hover {
+  background: #6a55ea;
+}
+
+.recentrighticon i {
+  padding-top: 4px;
+}
+
+.hashtag h3 {
+  font-weight: 400;
+  margin: 20px 0 34px 0;
+  font-size: 28px;
+  font-family: "Poppins", serif;
+}
+.hashtag i {
+  width: 36px;
+  height: 36px;
+  background-image: linear-gradient(#faac54, #a934ae);
+  background-clip: text;
+  color: transparent;
+}
+
+.recentrightbox2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.instaimg img {
+  width: 210px;
+  height: 210px;
+  border-radius: 20px;
+}
+/*=============================
+ Recent part end
+ ==============================*/
+
+/*=============================
+ Talk part start
+ ==============================*/
+
+.talk {
+  background: #f8fdfe;
+  padding: 120px 0;
+}
+
+.talkbox {
+  height: 436px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: #6a55ea;
+  border-radius: 80px;
+  padding: 0 120px;
+}
+
+.talkbutton {
+  height: 64px;
+  width: 153px;
+  background: #f8fdfe;
+  border-radius: 20px;
+  text-align: center;
+  color: #6a55ea;
+  font-family: "Nunito", serif;
+  font-weight: 400;
+  font-size: 18px;
+  border: 2px solid #fdfdfd;
+  transition: 0.5s;
+}
+
+.talkbutton:hover {
+  background: #6a55ea;
+  color: white;
+}
+
+.talkbox h3 {
+  height: 156px;
+  width: 529px;
+  font-size: 56px;
+  font-weight: 600;
+  color: #fdfdfd;
+  font-family: "Poppins", serif;
+}
+
+/*=============================
+ Recent part end
+ ==============================*/
+
+/*=============================
+ Footer part start
+ ==============================*/
+
+.footer {
+  padding-top: 120px;
+}
+
+.footer .box {
+  justify-content: space-between;
+}
+
+.footerstartlogo img {
+  padding-bottom: 44px;
+}
+
+.footerstarttext h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Nunito", serif;
+  height: 96px;
+  width: 449px;
+  color: #29313d;
+}
+
+.feature h2 {
+  padding-bottom: 48px;
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.feature p {
+  padding-bottom: 30px;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #29313d;
+}
+
+.copyright-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 57px;
+  padding-top: 58px;
+}
+
+.copyrightright {
+  display: flex;
+}
+.copyrightright p {
+  font-family: "Nunito", serif;
+  padding-left: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+}
+
+.copyrightleft {
+  width: 50%;
+}
+.copyrightleft h3 {
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+}
+
+/*=============================
+ Footer part end
+ ==============================*/
